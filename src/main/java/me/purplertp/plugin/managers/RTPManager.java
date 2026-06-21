@@ -48,7 +48,7 @@ public class RTPManager {
             return;
         }
 
-        if (!player.hasPermission("purplertp.bypass.cooldown")) {
+        if (!player.hasPermission("havocrtp.bypass.cooldown")) {
             CooldownManager cm = plugin.getCooldownManager();
             if (cm.isOnCooldown(player.getUniqueId(), worldName)) {
                 long remaining = cm.getRemainingCooldown(player.getUniqueId(), worldName);

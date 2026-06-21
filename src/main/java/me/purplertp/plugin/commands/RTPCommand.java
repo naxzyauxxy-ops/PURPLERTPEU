@@ -31,7 +31,7 @@ public class RTPCommand implements CommandExecutor {
             return true;
         }
 
-        if (!player.hasPermission("purplertp.use")) {
+        if (!player.hasPermission("havocrtp.use")) {
             player.sendMessage(MessageUtils.format("&cYou don't have permission to use RTP."));
             return true;
         }

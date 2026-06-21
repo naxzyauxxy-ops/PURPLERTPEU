@@ -1,30 +1,27 @@
-name: PurpleRTP
+name: HavocRTP
 version: '${project.version}'
 main: me.purplertp.plugin.PurpleRTP
 api-version: '1.21'
-description: Network-aware random teleport plugin with region menus.
+description: Havoc RTP plugin for EU.
 authors: [NaxzyAuxxy]
-
-# BungeeCord/Velocity plugin messaging channels
-channel: BungeeCord
 
 commands:
   rtp:
     description: Randomly teleport
     usage: /rtp
-    permission: purplertp.use
+    permission: havocrtp.use
   rtpadmin:
-    description: Admin commands for PurpleRTP
+    description: Admin commands
     usage: /rtpadmin <reload|clearcooldown|forcertp|pool>
-    permission: purplertp.admin
+    permission: havocrtp.admin
 
 permissions:
-  purplertp.use:
+  havocrtp.use:
     description: Allows use of /rtp
     default: true
-  purplertp.admin:
+  havocrtp.admin:
     description: Allows use of /rtpadmin
     default: op
-  purplertp.bypass.cooldown:
+  havocrtp.bypass.cooldown:
     description: Bypass RTP cooldown
     default: op

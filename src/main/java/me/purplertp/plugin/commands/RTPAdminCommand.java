@@ -20,7 +20,7 @@ public class RTPAdminCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (!sender.hasPermission("purplertp.admin")) {
+        if (!sender.hasPermission("havocrtp.admin")) {
             sender.sendMessage(MessageUtils.format(PREFIX + "&cNo permission."));
             return true;
         }
